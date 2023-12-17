@@ -19,7 +19,7 @@ namespace Dicu_Cristian_Lab2.Pages.Books
             _context = context;
         }
 
-      public Book Book { get; set; } = default!; 
+      public Models.Book Book { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

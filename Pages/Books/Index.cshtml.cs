@@ -19,7 +19,7 @@ namespace Dicu_Cristian_Lab2.Pages.Books
             _context = context;
         }
 
-        public IList<Book> Book { get;set; } = default!;
+        public IList<Models.Book> Book { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
