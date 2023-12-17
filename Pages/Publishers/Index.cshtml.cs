@@ -19,7 +19,7 @@ namespace Dicu_Cristian_Lab2.Pages.Publishers
             _context = context;
         }
 
-        public IList<Publisher> Publisher { get;set; } = default!;
+        public IList<Models.Publisher> Publisher { get;set; } = default!;
 
         public async Task OnGetAsync()
         {

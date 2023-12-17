@@ -20,7 +20,7 @@ namespace Dicu_Cristian_Lab2.Pages.Publishers
         }
 
         [BindProperty]
-      public Publisher Publisher { get; set; } = default!;
+      public Models.Publisher Publisher { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

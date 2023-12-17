@@ -21,13 +21,13 @@ namespace Dicu_Cristian_Lab2.Pages.Books
 
         public IActionResult OnGet()
         {
-            ViewData["PublisherID"] = new SelectList(_context.Set<Publisher>(), "ID",
+            ViewData["PublisherID"] = new SelectList(_context.Set<Models.Publisher>(), "ID",
                 "PublisherName");
             return Page();
         }
 
         [BindProperty]
-        public Book Book { get; set; } = default!;
+        public Models.Book Book { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
